@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_app/core/configs/theme/app_theme.dart';
+import 'package:spotify_app/presentation/choose_mode/screens/choose_mode.dart';
 import 'package:spotify_app/presentation/intro/screens/get_started.dart';
 import 'package:spotify_app/presentation/splash/screens/splash.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
-      home: GetStarted(),
+      home: ChooseModeScreen(),
     );
   }
 }
