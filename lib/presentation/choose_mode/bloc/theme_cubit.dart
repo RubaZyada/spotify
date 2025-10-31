@@ -10,20 +10,12 @@ class ThemeCubit extends HydratedCubit<ThemeMode> {
   // تحويل الحالة إلى JSON وتخزينها
   @override
   Map<String, dynamic>? toJson(ThemeMode state) {
-    return {'theme': state.toString().split('.').last};
+    return {'theme': state.index};
   }
 
   // استرجاع الحالة عند فتح التطبيق مجددًا
   @override
   ThemeMode? fromJson(Map<String, dynamic> json) {
-    final themeString = json['theme'] as String?;
-    switch (themeString) {
-      case 'light':
-        return ThemeMode.light;
-      case 'dark':
-        return ThemeMode.dark;
-      default:
-        return ThemeMode.system;
-    }
+    return ThemeMode.values[json['theme']  as int];
   }
 }
