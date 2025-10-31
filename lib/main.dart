@@ -8,7 +8,7 @@ import 'package:spotify_app/presentation/choose_mode/screens/choose_mode.dart';
 //import 'package:spotify_app/presentation/splash/screens/splash.dart';
 
 Future<void> main() async {
-  //هذا السطر يربط Flutter بالنظام الأساسي (platform) قبل تشغيل التطبيق.
+  //تهيئة الفلاتر قبل تشغيل التطبيق.
   WidgetsFlutterBinding.ensureInitialized();
   //تحدد مكان حفظ البيانات.
   HydratedBloc.storage = await HydratedStorage.build(
