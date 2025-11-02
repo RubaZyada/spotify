@@ -6,6 +6,7 @@ import 'package:spotify_app/common/widgets/button/basic_app_button.dart';
 import 'package:spotify_app/core/configs/assets/app_images.dart';
 import 'package:spotify_app/core/configs/assets/app_vectors.dart';
 import 'package:spotify_app/core/configs/theme/app_colors.dart';
+import 'package:spotify_app/presentation/auth/screens/signup_or_signin.dart';
 import 'package:spotify_app/presentation/choose_mode/bloc/theme_cubit.dart';
 
 class ChooseModeScreen extends StatelessWidget {
@@ -85,7 +86,7 @@ class ChooseModeScreen extends StatelessWidget {
 
                         const SizedBox(width: 15),
 
-                        // ☀️ LIGHT MODE BUTTON
+                        // LIGHT MODE BUTTON
                         GestureDetector(
                           onTap: () {
                             context.read<ThemeCubit>().updatetheme(ThemeMode.light);
@@ -125,7 +126,14 @@ class ChooseModeScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 50),
-                    BasicAppButton(title: 'Continue', onPressed: () {}),
+                    BasicAppButton(title: 'Continue', onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => SignupOrSignin(),
+                      ),
+                    );
+                    }),
                   ],
                 ),
               ),
