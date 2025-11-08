@@ -19,6 +19,7 @@ class BasicAppButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         // اذا ما حدد ارتفاع خليه 80
+       
         minimumSize: Size.fromHeight(height ?? 75),
         backgroundColor: AppColors.primaryColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
