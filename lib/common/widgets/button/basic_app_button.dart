@@ -5,7 +5,7 @@ class BasicAppButton extends StatelessWidget {
   final String title;
   final VoidCallback onPressed;
   final double? height;
-  
+
   const BasicAppButton({
     super.key,
     required this.title,
@@ -18,8 +18,6 @@ class BasicAppButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        // اذا ما حدد ارتفاع خليه 80
-       
         minimumSize: Size.fromHeight(height ?? 75),
         backgroundColor: AppColors.primaryColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),

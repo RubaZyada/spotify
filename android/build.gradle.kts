@@ -22,3 +22,9 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
+plugins {
+    // ... (أي إضافات أخرى موجودة)
+
+    // أضف هذا السطر
+    id("com.google.gms.google-services") version "4.4.4" apply false
+}
