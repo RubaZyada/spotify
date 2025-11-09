@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "297183781947",
+    "project_id": "fierbasetestproject",
+    "storage_bucket": "fierbasetestproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297183781947:android:3275754c8379c4fee3281e",
+        "android_client_info": {
+          "package_name": "com.example.fierbase1_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbX6MKht3MJVKZQkz5TTYByF8OVvH9vuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297183781947:android:36d24b9984284e7fe3281e",
+        "android_client_info": {
+          "package_name": "com.example.spotify_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbX6MKht3MJVKZQkz5TTYByF8OVvH9vuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

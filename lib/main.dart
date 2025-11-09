@@ -6,10 +6,14 @@ import 'package:path_provider/path_provider.dart';
 import 'package:spotify_app/core/configs/theme/app_theme.dart';
 import 'package:spotify_app/presentation/choose_mode/bloc/theme_cubit.dart';
 import 'package:spotify_app/presentation/splash/screens/splash.dart';
-
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 Future<void> main() async {
   //تهيئة الفلاتر قبل تشغيل التطبيق.
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
   //تحدد مكان حفظ البيانات.
   HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory:
